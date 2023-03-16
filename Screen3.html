@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design3.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <div class="sidebar">
+            <div class="brand">
+                <div class="logo">
+                    <img src="./Images/Basys_logo.jpg" alt="Logo" srcset="">
+                </div>
+                <div class="title">
+                    basys.ai
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="Screen2.html">
+                            <span class="material-icons">assignment_returned</span>
+                            <span><h3>Prior Authorization</h3></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Screen3.html" class="active">
+                            <span class="material-icons">dehaze</span>
+                            <span><h3>Claims</h3></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Screen1.html">
+                            <span class="material-icons">add_box</span>
+                            <span><h3>Medical Records</h3></span>
+                        </a>
+                    </li>                    
+                    
+                    <li>
+                        <a href="Screen1.html">
+                            <span class="material-icons">account_circle</span>
+                            <span><h3>My Profile</h3></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="content">
+        <header>
+            <div class="disclaimer">
+                <p>*This is a demo login with limited but essential functionality</p>
+            </div>
+            <div class="user-about">
+                <div class="user-top">
+                    <div class="user-info">
+                        Welcome Mervin!
+                    </div>
+                
+                    <div class="user-right">
+                        <i class="material-icons">search</i>
+                        <i class="material-icons">notifications</i>
+                        <i class="material-icons">account_circle</i>
+                        <i class="material-icons">exit_to_app</i>
+                    </div>
+                </div>
+                <div class="cl-req">
+                    <button id="new-assignment">Show Claim Details</button>                   
+                    <span><a href=""><b>Claim ID</b>200003</a></span>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <div class="popup">
+        <div class="cancel">
+            &times
+        </div>
+        <div class="claims-1">
+            <div class="claim-stat">
+                <div class="claim-icon">
+                    <i class="material-icons">pending_actions</i>
+                </div>
+                <div class="claim-info-1">
+                    <span>Claim ID</span>
+                    <span>Date of Service</span>
+                    <span>Status</span>
+                </div>
+                
+                <div class="claim-info-2">
+                    <span>200003</span>
+                    <span>1/10/2023</span>
+                    <span>Pending</span>
+                </div>
+            </div>
+            <div class="pt-info">
+                <div class="pat-1">
+                    <div class="pat-img">
+                        <img src="./Images/profile.png" alt="" srcset="">
+                    </div>
+                    <div class="pat-par">
+                        <h3>Linda Harris</h3>
+                        <span>11/09/1945 (76 yrs), F</span>
+                        <span>Non-Smoker</span>
+                    </div>
+                </div>
+                <div class="pat-2">
+                    <div class="pat-parts">
+                        <span>EMPI/MRN</span>
+                        <span>P071645</span>
+                    </div>
+                    
+                    <div class="pat-parts">
+                        <span>Phone</span>
+                        <span>512-265-4081</span>
+                    </div>
+
+                    <div class="pat-parts">
+                        <span>PCP</span>
+                        <span>Dr. Karen Carter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-info">
+                <div class="doctor">
+                    <h2>Dr. Roger Lenon</h2>
+                    <span>MD, NPI 43212</span>
+                    <span>Hltzman Medical Group</span>
+                    <span>Contact No. 2380181221</span>
+                </div>
+                <div class="doc-img">
+                    <img src="./Images/doctor.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="auth">
+                <h3>Prior Authorization</h3>
+                <span><b>RID:</b>200003</span>
+                <span><b>AuthID:</b>63cBcef16328c39de555111f</span>
+                <span><b>Services Requested:</b></span>
+                <span>- CPT 92227 &times 2 visits Annually</span>
+            </div>
+        </div>
+        <div class="claims-2">
+            <div class="payer">
+                <h3>Primary Payer</h3>
+                <span>VETERANS ADMINISTRATION -  PRESCOTT VA [199311) 123456789 (Contracts)</span>
+                <span><b>EDI-</b> 199311</span>
+                <span><b>Assignment-</b> Not Assigned</span>
+                <span><b>Force Drop to Paper-</b> No</span>
+            </div>
+            <div class="sec-pay">
+                <h3>Secondary Payer</h3>
+                <span>Humana (Medicare Replacement/Advantage - PPO) [47006] 123456789 </span>
+                <span><b>EDI-</b> 47006</span>
+                <span><b>Assignment-</b> Not Assigned</span>
+                <span><b>Force Drop to Paper-</b> No</span>
+            </div>
+            <div class="diag">
+                <div class="diag-hd">
+                    <span>CPT</span>
+                    <span>Diagnosis</span>
+                    <span>Units</span>
+                    <span>Price</span>
+                </div>
+                <div class="diag-body">
+                    <span>92227</span>
+                    <span>Imaging of Retina for detection or <br>monitoring of disease</span>
+                    <span>2</span>
+                    <span>$432</span>
+                </div>
+                <div class="diag-total">
+                    <b>Total: $864</b>
+                </div>
+            </div>
+            <div class="note">
+                <h3>Note for Provider</h3>
+                <div class="textarea">
+                    <textarea id="w3review" name="w3review" rows="3" cols="95%">Text goes here... </textarea>
+                </div>
+            </div>
+            <div class="accept-rej">
+                <button id="rej" placeholder="Reject with note">Reject with note </button>
+                <button id="accept" placeholder="Approve">Approve</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector("#new-assignment").addEventListener("click",function(){
+            document.querySelector(".popup").classList.add("active");
+            document.querySelector("main").classList.add("blur-filter");
+            document.querySelector("aside").classList.add("blur-filter");
+        })
+        document.querySelector(".popup .cancel").addEventListener("click",function(){
+            document.querySelector(".popup").classList.remove("active");
+            document.querySelector("main").classList.remove("blur-filter");
+            document.querySelector("aside").classList.remove("blur-filter");
+        })
+    </script>
+</body>
+</html>
